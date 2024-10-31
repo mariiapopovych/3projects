@@ -114,7 +114,9 @@ main ul {
     display: grid;
     gap: 1rem;
 }
-
+main li {
+    position: relative;
+}
 main li:nth-of-type(1) {
     grid-area: img1;
 }
@@ -179,7 +181,18 @@ footer {
     width: 1px;
 }
 
-/* min-width 751px, medium screens */
+@media only screen and (max-width: 46.938em) {
+    main ul {
+        display: flex;
+        flex-flow: column;
+    }
+    main ul li {
+        flex-basis: 100%;
+    }
+}
+
+
+
 @media only screen and (min-width: 46.938em) {
 	main ul {
         grid-template-areas: 
@@ -198,7 +211,7 @@ footer {
     }
 }
 
-/* min-width 1025px, large screens */
+
 @media only screen and (min-width: 64.063em) {
 	main ul {
         grid-template-areas: 

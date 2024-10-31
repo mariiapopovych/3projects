@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form id="weatherForm">
+            <label for="latitude">Latitude:</label>
+            <input type="number" id="latitude" placeholder="e.g., 40.7128" required>
+            <label for="longitude">Longitude:</label>
+            <input type="number" id="longitude" placeholder="e.g., -74.0060" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weatherResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
